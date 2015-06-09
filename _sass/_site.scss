@@ -1,0 +1,54 @@
+@import "mixins";
+//@import "functions";
+
+$background: #5e5e5e;
+$foreground: #3a3a3a;
+
+//$font: 'Roboto' Arial sans-serif;
+$font: Arial, sans-serif;
+$main-text-color: white;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+body {
+    background-color: $background;
+
+    // for rem reference
+    font-size: 16px;
+
+
+}
+
+#content {
+
+    //min-width: unit(50rem);
+    //max-width: unit(64rem);
+
+    min-width: 50rem;
+    max-width: 64rem;
+
+    min-height: 50rem;
+
+    margin: 1rem auto;
+
+    padding: 1rem;
+
+    background-color: $foreground;
+    color: $main-text-color;
+    font : {
+        family: $font;
+    }
+
+    position: relative;
+
+    @include box-sizing(border-box);
+    @include box-shadow(-7px -7px 2px -1px #181919);
+
+    @import "header";
+    @import "footer";
+}

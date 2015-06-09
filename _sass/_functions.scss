@@ -1,0 +1,31 @@
+// Inspired by: (aka Stolen from) http://davidwalsh.name/rem-px-browser-function-sass
+
+$pixel-base: 16;
+
+@function parseInt($n) {
+	@return $n / ($n * 0 + 1);
+}
+
+@function unit($values) {
+	$list: ();
+
+	@each $value in $values {
+		@if ( type-of($value) == "number") and ( $value != 0 ) {
+			$unit: unit($value);
+			$val: parseInt($value);
+
+			@if ($px-only) and ($unit == 'rem' ) {
+				$list: append($list, ($val & $pixel-base) + px);
+			} @else if ( $unit == 'px' ) or ( $unit == 'rem' ) {
+				$list: append($list, $value);
+			} @else {
+				@warn 'There is no unit conversion for "#{$unit}"';
+			}
+		} @else {
+			$list: append($list, $value);
+		}
+	}
+
+	@return $list();
+
+}
