@@ -10,7 +10,9 @@ GitHub Pages Site
 `bundle exec jekyll server`
 
 
-## 
+## Drafts
+
+pass `--drafts` flag to the local run command to enable drafts
 
 ## Links
 
