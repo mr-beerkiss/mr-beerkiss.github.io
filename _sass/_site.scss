@@ -24,7 +24,7 @@ body {
 
 }
 
-#content {
+#container {
 
     //min-width: unit(50rem);
     //max-width: unit(64rem);
@@ -51,4 +51,21 @@ body {
 
     @import "header";
     @import "footer";
+}
+
+// code blocks override
+#content {
+
+    .highlight {
+        background-color: 2e2e2e;
+        border-radius: 5px;
+        padding: 0.1rem 1rem;
+
+        @include box-shadow(inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5));
+
+    }
+
+    @import "contact";
+    @import "blog";
+
 }

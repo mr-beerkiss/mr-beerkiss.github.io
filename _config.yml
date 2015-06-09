@@ -1,1 +1,9 @@
 port: 4001
+
+highlighter: pygments
+
+# for kramdown
+markdown: kramdown
+kramdom:
+  input: GFM
+

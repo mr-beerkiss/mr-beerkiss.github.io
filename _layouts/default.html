@@ -4,11 +4,13 @@
 
 <body>
 
-    <div id="content">
+    <div id="container">
 
         {% include header.html %}
 
-        {{ content }}
+        <div id="content"  class="{{ page.contentClass }}" >
+            {{ content }}
+        </div>
 
         {% include footer.html %}
 
