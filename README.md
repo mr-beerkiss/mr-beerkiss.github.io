@@ -3,6 +3,12 @@ GitHub Pages Site
 
 ## First Thing
 
+Get the Bundler GEM
+
+`gem install bundler`
+
+Install project dependencies
+
 `bundle install`
 
 ## Running Locally 
