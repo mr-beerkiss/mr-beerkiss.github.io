@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Work
+group: "navigation"
 ---
 
 # Work

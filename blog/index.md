@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 contentClass: blog
+group: "navigation"
 ---
 
 # Blog Posts

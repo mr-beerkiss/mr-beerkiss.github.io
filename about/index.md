@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+group: "navigation"
 ---
 
 # Kramdown Header    {#about-header}

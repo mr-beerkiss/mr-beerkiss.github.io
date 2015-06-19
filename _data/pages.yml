@@ -1,0 +1,15 @@
+- url: /
+  title: Home
+  group: navigation
+- url: /blog
+  title: Blog
+  group: navigation
+- url: /work
+  title: Work
+  group: navigation
+- url: /about
+  title: About
+  group: navigation
+- url: /contact
+  title: Contact
+  group: navigation
