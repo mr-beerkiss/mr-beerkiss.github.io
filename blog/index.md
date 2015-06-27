@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: Blog
 contentClass: blog
 group: "navigation"

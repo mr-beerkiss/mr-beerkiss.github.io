@@ -1,0 +1,82 @@
+<html>
+
+    {% include head.html %}
+
+<body>
+
+    <div id="container">
+
+        {% include header.html %}
+
+        <div class="container">
+                        <div class="jumbotron text-center">
+                                <h1>Hello, world!</h1>
+                                <p>Sed sit amet quam vel erat convallis posuere. In convallis suscipit gravida. Nunc euismod ligula vitae velit lobortis, at tempus quam fermentum. Fusce lobortis suscipit neque. Vivamus a lacus ultrices, tempor turpis sit amet, condimentum justo. Integer porta volutpat ultrices. Proin maximus tellus vitae lectus sollicitudin, non dapibus mauris varius.</p>
+                                <a class = "btn btn-default">Watch now</a>
+                                <a class = "btn btn-info">Tweet It!</a>
+                        </div>
+        </div>
+
+        <div class="container">
+                <div class="row">
+                        <!-- NB: Grid system consists of 12 cells! -->
+                        <div class="col-md-6">
+                                <h3><a href="#">$500 Gaming PC Build</a></h3>
+                                <p>Sed enim magna, vestibulum sed fringilla nec, tempus eu elit. Integer gravida laoreet nibh eu cursus. Etiam eleifend varius risus, eget malesuada odio tincidunt sed. Pellentesque semper eu erat at placerat. Vivamus feugiat elit et erat molestie dapibus. Praesent at libero non elit sollicitudin commodo. Donec malesuada leo id tellus venenatis varius. Morbi eu mauris porta, gravida velit nec, volutpat eros. Phasellus eget suscipit elit. Quisque vehicula rhoncus quam, id gravida sapien facilisis ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                                <!-- a[href = "#"].btn.btn-default{Read more} -->
+                                <div href="#modal-form" class="btn btn-default" data-toggle="modal">Modal Form</div>
+                        </div>
+
+                                <div class="col-md-3">
+                                <h3><a href="#">$500 Gaming PC Build</a></h3>
+                                <p>Sed enim magna, vestibulum sed fringilla nec, tempus eu elit. Integer gravida laoreet nibh eu cursus. Etiam eleifend varius risus, eget malesuada odio tincidunt sed. Pellentesque semper eu erat at placerat. Vivamus feugiat elit et erat molestie dapibus. Praesent at libero non elit sollicitudin commodo. Donec malesuada leo id tellus venenatis varius. Morbi eu mauris porta, gravida velit nec, volutpat eros. Phasellus eget suscipit elit. Quisque vehicula rhoncus quam, id gravida sapien facilisis ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                                <!-- a[href = "#"].btn.btn-default{Read more} -->
+                                <div href="#" class="btn btn-default">Read more</div>
+                        </div>
+
+                        <div class="col-md-2">
+                                <h3><a href="#">$500 Gaming PC Build</a></h3>
+                                <p>Sed enim magna, vestibulum sed fringilla nec, tempus eu elit. Integer gravida laoreet nibh eu cursus. Etiam eleifend varius risus, eget malesuada odio tincidunt sed. Pellentesque semper eu erat at placerat. Vivamus feugiat elit et erat molestie dapibus. Praesent at libero non elit sollicitudin commodo. Donec malesuada leo id tellus venenatis varius. Morbi eu mauris porta, gravida velit nec, volutpat eros. Phasellus eget suscipit elit. Quisque vehicula rhoncus quam, id gravida sapien facilisis ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                                <!-- a[href = "#"].btn.btn-default{Read more} -->
+                                <div href="#" class="btn btn-default">Read more</div>
+                        </div>
+
+                        <div class="col-md-1">
+                                <h3><a href="#">$500 Gaming PC Build</a></h3>
+                                <p>Sed enim magna, vestibulum sed fringilla nec, tempus eu elit. Integer gravida laoreet nibh eu cursus. Etiam eleifend varius risus, eget malesuada odio tincidunt sed. Pellentesque semper eu erat at placerat. Vivamus feugiat elit et erat molestie dapibus. Praesent at libero non elit sollicitudin commodo. Donec malesuada leo id tellus venenatis varius. Morbi eu mauris porta, gravida velit nec, volutpat eros. Phasellus eget suscipit elit. Quisque vehicula rhoncus quam, id gravida sapien facilisis ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                                <!-- a[href = "#"].btn.btn-default{Read more} -->
+                                <div href="#" class="btn btn-default">Read more</div>
+                        </div>
+
+                </div>
+        </div>
+
+        <!--<div id="content"  class="{{ page.contentClass }}" >
+            {{ content }}
+        </div>-->
+
+        {% include footer.html %}
+
+        <div class="modal fade" id="modal-form" role="dialog">
+                <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <h4>Contact Me</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                                <p>ed sit amet quam vel erat convallis posuere. In convallis suscipit gravida. Nunc euismod ligula vitae velit lobortis, at tempus quam fermentum. Fusce lobortis suscipit neque. Vivamus a lacus ultrices, tempor turpis sit amet, condimentum justo. Integer porta volutpat ultrices. Proin maximus tellus vitae lectus sollicitudin, non dapibus mauris varius.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                                <a data-dismiss="modal" class="btn btn-primary">Don't Go!</a>
+                                                <a data-dismiss="modal" class="btn btn-default">close</a></div>
+                                        </div>
+                                        
+                                </div>
+                </div>
+        </div>
+
+    </div>
+
+    {% include scripts.html %}
+</body>
+</html>
