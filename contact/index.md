@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-group: "navigation"
+#group: "navigation"
 contentClass: contact
 ---
 

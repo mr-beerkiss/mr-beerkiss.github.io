@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Work
+title: Portfolio
 group: "navigation"
 ---
 
-# Work
+# Portfolio
 
 This is page about all my previous work

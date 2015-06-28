@@ -1,3 +1,4 @@
 #!/bin/bash
-bundle exec jekyll server
+# Add/Remove the --drafts to preview drafts
+bundle exec jekyll serve --drafts
 
