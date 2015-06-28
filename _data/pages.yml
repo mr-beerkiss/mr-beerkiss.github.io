@@ -4,6 +4,10 @@
 - url: /blog/index.html
   title: Blog
   group: navigation
-- url: /work/index.html
-  title: Work
+- url: /portfolio/index.html
+  title: Portfolio
   group: navigation
+- url: /about/index.html
+  title: About
+  group: navigation
+

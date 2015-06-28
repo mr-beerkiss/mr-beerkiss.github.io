@@ -1,0 +1,41 @@
+<html>
+
+    {% include head.html %}
+
+<body>
+
+    <div id="container">
+
+        {% include header.html %}  
+
+        <div id="content"  class="container" >
+            
+
+            <div class="row">
+                <div class="col-sm-8 content-padding">
+                    <div class="panel panel-default">
+                        <div class="panel-body {{ page.contentClass }}">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            {% include about.html %}
+                        </div>  
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+        
+
+    </div>
+
+    {% include scripts.html %}
+</body>
+</html>
