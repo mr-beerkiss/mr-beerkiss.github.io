@@ -2,6 +2,7 @@
 layout: default
 title: Home
 group: "navigation"
+contentClass: blog-post
 ---
 
 
@@ -9,6 +10,8 @@ group: "navigation"
     
 {% assign post = site.posts.first %}
 {% assign content = post.content %}
+{% assign title = post.title %}
+{% assign date = post.date %}
 {% include post_detail.html %}
 
 

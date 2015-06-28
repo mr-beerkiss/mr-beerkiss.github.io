@@ -4,7 +4,7 @@ title: Styling Tests
 contentClass: blog-post
 ---
 
-# Main Header
+
 
 Here is just some plain text
 
@@ -21,9 +21,15 @@ Here is an inline code example `run me` hopefully it works for you (because it d
 The most banal code ever written:
 
 {% highlight javascript %}
-function helloWorld() {
-    console.log("Hello world!");
-}
+(function(window, undefined) {
+    window.onload = function() {
+        greet();
+    };
+
+    function greet() {
+        alert("Well, hello World!");
+    }
+})();
 {% endhighlight %}
 
 ### Smaller heading
