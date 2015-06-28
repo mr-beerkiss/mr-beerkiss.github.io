@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-sidebar
 title: Home
 group: "navigation"
 contentClass: blog-post
