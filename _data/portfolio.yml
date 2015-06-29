@@ -30,3 +30,20 @@
     - CSS3 Transitions
     - Responsive Web Design
     - ES6
+- title: Moving Moments
+  subtitle: Developed by GTech
+  description: Sticky Wild Slot
+  visible: true
+  thumbnail: /images/portfolio/moving-moments-thumb.png
+  class: moving-moments
+  iframe:
+    url: https://i.probability.mobi/MovingMomentsSlots.php?directLink&playForFun=true
+    width: 720
+    height: 720
+  technologies:
+    - Web Audio API
+    - HTML5 Canvas
+    - CSS3 Transitions
+    - PHP
+
+

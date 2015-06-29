@@ -7,14 +7,15 @@
     background : {
         repeat: no-repeat;
         size: 100% auto;
+        position: center;
     }
 
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
 
     max-height: 41%;
 
-    @each $thumbnail in ( beach-blast keepy-uppy ) {
+    @each $thumbnail in ( beach-blast keepy-uppy moving-moments ) {
         &.#{$thumbnail} {
             $thumbnail-url: "/images/portfolio/#{$thumbnail}-thumb.png";
             background-image: url($thumbnail-url);
@@ -23,8 +24,8 @@
 
     .porfolio-cell-info {
         background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100%;
+        // width: 100%;
+        // height: 100%;
         
         color: #7FC4B1;
         text-shadow: 2px 2px 2px #570C72;
@@ -40,27 +41,42 @@
     }
 }
 
-.beerkiss-iframe-container {
-
-    position: fixed;
+.beerkiss-iframe-overlay {
+    position: absolute;
     left: 0;
-    right: 0;
     top: 0;
-    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
     z-index: 1;
 
     background-color: rgba(0, 0, 0, 0.75);
+    
+    .beerkiss-iframe-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-    @include transform(translateY(0));
+        .beerkiss-iframe {
+        
+        }
 
-    @include transition(transform 1s ease-out);
-    display: block;
+        .beerkiss-iframe__close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include transform(translate(50%, -50%));
 
-    &.beerkiss-iframe-container__out {
-        @include transform(translateY(100%));
-        display: none;
+            color: #d9534f;
+
+            &:hover {
+                
+                color: #b23530;
+            }
+        }
     }
 
-    .beerkiss-iframe {
-    }
 }
+

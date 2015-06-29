@@ -1,5 +1,5 @@
 ---
-layout: default-sidebar
+layout: portfolio
 title: Portfolio
 group: "navigation"
 ---
@@ -11,38 +11,9 @@ group: "navigation"
 <div class="container">
     
     <div class="row">
-        <!-- <div class="col-sm-3">
-            <div class="portfolio-cell">
-                <div class="porfolio-cell-info">
-                    <h3>
-                        Beach Blast
-                    </h3>
-                    <h4>
-                        Developed by Nektan for The Sun
-                    </h4>
-                    <h5>
-                        Description
-                    </h5>
-                    <p>
-                        It's a race against time to score as many points before the sun sets.  Matches adjacent to the ball will cause it to inflate and eventually explode!
-                    </p>
-                    <h5>
-                        Technologies Used:
-                        <ul>
-                            <li>Web Audio API</li>
-                            <li>HTML5 Canvas</li>
-                            <li>CSS3 Transitions</li>
-                            <li>Responsive Web Design</li>
-                            <li>ES6</li>
-                        </ul>
-                    </h5>
-                </div>
-            </div>
-        </div> -->
-
         {% for entry in site.data.portfolio %} 
         
-            <div class="col-sm-3">
+        <div class="col-sm-2">
             <div class="portfolio-cell {{ entry.class }}">
                 <div class="porfolio-cell-info" 
                     onclick="openiFrame('{{ entry.iframe.url }}', {{ entry.iframe.width }}, {{ entry.iframe.height }} )">
@@ -74,41 +45,3 @@ group: "navigation"
     </div>
 
 </div>
-
-<div class="beerkiss-iframe-container hidden">  
-    <!-- <iframe id="portfolio-iframe" src="https://www.thesunplay.co.uk/games/beach-blast/" width="720" height="720" class="beerkiss-iframe" allow-same-origin="true"></iframe>
- -->
-</div>
-
-<script>
-
-var iFrameContainer;
-
-function openiFrame(url, width, height) {
-    if ( !iFrameContainer ) {
-        iFrameContainer = document.querySelector(".beerkiss-iframe-container");
-    }
-
-    iFrameContainer.classList.remove("hidden");
-
-    if ( !url ) {
-        return;
-    }
-
-    width = width || 720;
-    height = height || 720;
-
-    var iFrame = document.createElement("iframe");
-
-    iFrame.src = url;
-    iFrame.width = width;
-    iFrame.height = height;
-    iFrame.className = "beerkiss-iframe";
-
-    iFrameContainer.appendChild(iFrame);
-}
-
-function destroyiFrame() {
-
-}
-</script>
