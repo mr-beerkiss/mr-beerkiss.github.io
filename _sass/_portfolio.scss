@@ -57,10 +57,17 @@
         position: absolute;
         top: 50%;
         left: 50%;
+
         transform: translate(-50%, -50%);
 
+        min-width: 50%;
+        min-height: 50%;
+
+        background-color: white;
+
         .beerkiss-iframe {
-        
+            box-sizing: content-box;
+            border: solid 15px white;
         }
 
         .beerkiss-iframe__close {
@@ -75,6 +82,13 @@
                 
                 color: #b23530;
             }
+        }
+
+        .beerkiss-iframe-loading {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
         }
     }
 
