@@ -9,3 +9,15 @@
 	-webkit-box-sizing: $sizing;
 	box-sizing: $sizing;
 }
+
+@mixin transform($transform) {
+    -moz-transform: $transform;
+    -webkit-transform: $transform;
+    transform: $transform;
+}
+
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}

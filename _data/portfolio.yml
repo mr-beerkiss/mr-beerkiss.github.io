@@ -1,0 +1,32 @@
+- title: Beach Blast
+  subtitle: Developed by Nektan for The Sun
+  description: It's a race against time to score as many points before the sun sets.  Matches adjacent to the ball will cause it to inflate and eventually explode!
+  visible: true
+  thumbnail: /images/portfolio/beach-blast-thumb.png
+  class: beach-blast
+  iframe:
+    url: https://www.thesunplay.co.uk/games/beach-blast/
+    width: 720
+    height: 720
+  technologies:
+    - Web Audio API
+    - HTML5 Canvas
+    - CSS3 Transitions
+    - Responsive Web Design
+    - ES6
+- title: Keepy Uppy
+  subtitle: Developed by Nektan for The Sun
+  description: Test your timing and reflexes as you go for the highest score possible.  Beware the extra balls!
+  visible: true
+  thumbnail: /images/portfolio/beach-blast-thumb.png
+  class: keepy-uppy
+  iframe:
+    url: https://www.thesunplay.co.uk/games/keepy-uppy/
+    width: 720
+    height: 720
+  technologies:
+    - Web Audio API
+    - HTML5 Canvas
+    - CSS3 Transitions
+    - Responsive Web Design
+    - ES6
