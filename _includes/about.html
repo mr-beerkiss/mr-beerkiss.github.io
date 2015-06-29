@@ -8,11 +8,15 @@
 	Alternatively use the social links below to get in touch!
 </p>
 <ul class="list-inline">
-	<li class=""><a target="_blank" href="mailto:darren@beerkkiss.io" class="social-link"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-	<li class=""><a target="_blank" href="https://github.com/mr-beerkiss" class="social-link"><i class="fa fa-github fa-2x"></i></a></li>
-	<li class=""><a target="_blank" href="https://twitter.com/mr_beerkiss" class="social-link"><i class="fa fa-twitter fa-2x"></i></a></li>
-	<li class=""><a target="_blank" href="https://instagram.com/mr_beerkiss/" class="social-link"><i class="fa fa-instagram fa-2x"></i></a></li>
-	<li class=""><a target="_blank" href="https://uk.linkedin.com/pub/darren-beukes/2/509/865" class="social-link"><i class="fa fa-linkedin fa-2x"></i></a></li>
+    {% for entry in site.data.social %}
+        {% if entry.visible %}       
+            <li>
+                <a target="_blank" href="{{ entry.url }}" class="social-link">
+                    <i class="fa {{entry.iconClass}} fa-2x"></i>
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
 </ul>
 
 <p>As an aside, this site is brand new so please be patient while I fill it with content!</p>
