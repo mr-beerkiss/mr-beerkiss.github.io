@@ -1,0 +1,35 @@
+.portfolio-cell {
+    
+    $thumbnail-url: "/images/portfolio/beach-blast-thumb.png";
+    
+    @include box-shadow(-3px 3px 2px 0 rgba(0, 0, 0, 0.5));
+
+    background : {
+        image: url($thumbnail-url);
+        repeat: no-repeat;
+        size: 100% auto;
+    }
+
+    width: 100%;
+    height: 100%;
+
+    max-height: 41%;
+
+    .porfolio-cell-info {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        
+        color: #7FC4B1;
+        text-shadow: 2px 2px 2px #570C72;
+
+        opacity: 0;
+
+        transition: opacity 0.5s ease-out;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+}
