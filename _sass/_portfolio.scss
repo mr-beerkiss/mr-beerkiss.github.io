@@ -13,7 +13,7 @@
 
     max-height: 40%;
 
-    @each $thumbnail in ( beach-blast keepy-uppy moving-moments thyms ) {
+    @each $thumbnail in ( beach-blast keepy-uppy moving-moments thyms roulette ) {
         &.#{$thumbnail} {
             $thumbnail-url: "/images/portfolio/#{$thumbnail}-thumb.png";
             background-image: url($thumbnail-url);

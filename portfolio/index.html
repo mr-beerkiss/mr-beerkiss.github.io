@@ -6,7 +6,7 @@ group: "navigation"
 
 <h1>Portfolio</h1>
 
-<p> Here is some of the stuff I've been working on... </p>
+<p> Here are some of the projects I have worked on </p>
  
 <div class="container margin-override-left">
     
@@ -59,6 +59,11 @@ group: "navigation"
                                     <li>{{ tech }}</li>
                                 {% endfor %} 
                             </ul>
+            
+                            {% if entry.mobileOnly %}
+                            <p class="text-center text-danger">May not work correctly on desktop browser</p>
+                            {% endif %}
+
                             <h3 class="text-center">Click to launch!</h3>
                         </div>
                     </div>

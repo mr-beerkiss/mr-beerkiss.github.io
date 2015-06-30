@@ -13,7 +13,7 @@
   technologies:
     - Web Audio API
     - HTML5 Canvas
-    - CSS3 Transitions
+    - CSS3 Animations
     - Responsive Web Design
     - ES6
     - Restful API
@@ -32,7 +32,7 @@
   technologies:
     - Web Audio API
     - HTML5 Canvas
-    - CSS3 Transitions
+    - CSS3 Animations
     - Responsive Web Design
     - ES6
     - Restful API
@@ -49,7 +49,8 @@
   technologies:
     - Web Audio API
     - HTML5 Canvas
-    - CSS3 Transitions
+    - JSON Data interchange
+    - CSS3 Animations
     - PHP
 - title: Thyms.co.uk
   subtitle: Freelance
@@ -64,5 +65,23 @@
   technologies:
     - Plain ol' Javascript (lots of Closures)
     - JSON data inputs
-    - CSS Transitions
+    - CSS Animations
     - PHP SMTP for contact form
+- title: Roulette
+  subtitle: Developed by Probability
+  description: >
+    One of the first of Probability's HD game to feature sound and higher definition graphics.
+    Also one of the first mobile web Roulette games to use drag and drop chip placement.
+  visible: true
+  thumbnail: /images/portfolio/roulette-thumb.png
+  class: roulette
+  iframe: 
+    url: https://i.probability.mobi/Roulette2.php?directLink&playForFun=true
+    width: 980
+    height: 735
+  mobileOnly: true
+  technologies:
+    - HTML5 Canvas
+    - CSS3 Animations
+    - JSON Data interchange
+    - PHP
