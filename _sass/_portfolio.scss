@@ -1,45 +1,50 @@
 .portfolio-cell {
     
-    
-    
-    @include box-shadow(-3px 3px 2px 0 rgba(0, 0, 0, 0.5));
-
     background : {
         repeat: no-repeat;
-        size: 100% auto;
-        position: center;
+        size: contain;
+        position: top center;
     }
+    
+    position: relative;
 
-    // width: 100%;
-    // height: 100%;
+    width: 90%;
+    margin: 0 auto;
 
-    max-height: 41%;
+    max-height: 40%;
 
-    @each $thumbnail in ( beach-blast keepy-uppy moving-moments ) {
+    @each $thumbnail in ( beach-blast keepy-uppy moving-moments thyms ) {
         &.#{$thumbnail} {
             $thumbnail-url: "/images/portfolio/#{$thumbnail}-thumb.png";
             background-image: url($thumbnail-url);
         }
     }
 
-    .porfolio-cell-info {
-        background-color: rgba(0, 0, 0, 0.5);
-        // width: 100%;
-        // height: 100%;
-        
-        color: #7FC4B1;
-        text-shadow: 2px 2px 2px #570C72;
+    .portfolio-image-faker {
+        visibility: hidden;
+    }
+
+    .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        padding: 5px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        width: 100%;
+        height: 100%;
 
         opacity: 0;
 
-        @include transition(opacity 0.5s ease-out);
+        @include transition(opacity 333ms ease-in);
 
         &:hover {
             opacity: 1;
         }
-
     }
 }
+
+
 
 .beerkiss-iframe-overlay {
     position: absolute;
@@ -60,7 +65,7 @@
 
         transform: translate(-50%, -50%);
 
-        min-width: 50%;
+        //min-width: 50%;
         min-height: 50%;
 
         background-color: white;

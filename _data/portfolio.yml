@@ -1,6 +1,8 @@
 - title: Beach Blast
   subtitle: Developed by Nektan for The Sun
-  description: It's a race against time to score as many points before the sun sets.  Matches adjacent to the ball will cause it to inflate and eventually explode!
+  description: >
+    It's a race against time to score as many points before the sun sets.  
+    Matches adjacent to the ball will cause it to inflate and eventually explode!
   visible: true
   thumbnail: /images/portfolio/beach-blast-thumb.png
   class: beach-blast
@@ -14,11 +16,14 @@
     - CSS3 Transitions
     - Responsive Web Design
     - ES6
+    - Restful API
 - title: Keepy Uppy
   subtitle: Developed by Nektan for The Sun
-  description: Test your timing and reflexes as you go for the highest score possible.  Beware the extra balls!
+  description: >
+    Test your timing and reflexes as you go for the highest score possible.  
+    Beware the extra balls! (Tip: on desktop use 1, 2 & 3 to kick the ball)
   visible: true
-  thumbnail: /images/portfolio/beach-blast-thumb.png
+  thumbnail: /images/portfolio/keepy-uppy-thumb.png
   class: keepy-uppy
   iframe:
     url: https://www.thesunplay.co.uk/games/keepy-uppy/
@@ -30,6 +35,7 @@
     - CSS3 Transitions
     - Responsive Web Design
     - ES6
+    - Restful API
 - title: Moving Moments
   subtitle: Developed by GTech
   description: Sticky Wild Slot
@@ -45,5 +51,18 @@
     - HTML5 Canvas
     - CSS3 Transitions
     - PHP
-
-
+- title: Thyms.co.uk
+  subtitle: Freelance
+  description: Website I built for a friend in exchange for a bicycle service.
+  visible: true
+  thumbnail: /images/portfolio/thyms-thumb.png
+  class: thyms
+  iframe: 
+    url: http://www.thyms.co.uk/
+    width: 980
+    height: 720
+  technologies:
+    - Plain ol' Javascript (lots of Closures)
+    - JSON data inputs
+    - CSS Transitions
+    - PHP SMTP for contact form
