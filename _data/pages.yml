@@ -4,8 +4,8 @@
 - url: /blog/index.html
   title: Blog
   group: navigation
-- url: /portfolio/index.html
-  title: Portfolio
+- url: /projects/index.html
+  title: Projects
   group: navigation
 - url: /about/index.html
   title: About
