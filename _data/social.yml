@@ -11,7 +11,7 @@
   url: https://twitter.com/mr_beerkiss
   iconClass: fa-twitter
 - description: instagram
-  visible: false
+  visible: true
   url: https://instagram.com/mr_beerkiss/
   iconClass: fa-instagram
 - description: linkedin
