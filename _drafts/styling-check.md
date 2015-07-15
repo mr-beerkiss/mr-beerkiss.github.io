@@ -47,3 +47,6 @@ How about a good ol' block quote:
 > <cite>&mdash; Nelson Mandela</cite>
 
 That's odd.
+
+And don't forget you may need to include a [link](http://daringfireball.net/projects/markdown/syntax#link "external") 
+once in a while
