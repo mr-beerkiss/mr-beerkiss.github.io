@@ -32,3 +32,5 @@ pass `--drafts` flag to the local run command to enable drafts
 
 [Kramdown Reference](http://kramdown.gettalong.org/quickref.html)
 
+[Subtle Patterns (Background)](http://subtlepatterns.com/thumbnail-view/)
+
